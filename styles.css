@@ -701,3 +701,25 @@ dialog > img {
 #chat-messages .escalation-status:empty {
   display: none;
 }
+.header-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-links .faq-link {
+  position: static;
+  transform: none;
+}
+
+@media (max-width: 700px) {
+  .header-links {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
